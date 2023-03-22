@@ -42,7 +42,7 @@ export default function SinglePhone() {
 
 
   return (
-    <Card sx={{ maxWidth: 345, padding:"10px 100px" , boxShadow:3, margin:"10px"}}>
+    <Card sx={{ maxWidth: 445, padding:{xs:"10px 0px", sm:"10px 100px"}, width:{xs:"300px"} , boxShadow:3}} >
       <CardActionArea component={RouterLink} to={`/phones/${phone.id}`}>
         <CardMedia
           component="img"
@@ -50,8 +50,8 @@ export default function SinglePhone() {
           image={`/${phone.imageFileName}`}
           alt="green iguana"
         />
-        <CardContent sx={{width: "100%",}}>
-          <Typography gutterBottom variant="h2" component="div">
+        <CardContent sx={{width: {}}}>
+          <Typography gutterBottom variant="h3" component="div">
             {phone.name}
           </Typography>
           <Typography sx={{padding: "5px 0", display:"flex", flexDirection:"column"}}>

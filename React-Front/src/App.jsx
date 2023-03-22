@@ -1,4 +1,3 @@
-import { display } from '@mui/system';
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Phones from './pages/Phones';
@@ -6,7 +5,7 @@ import SinglePhone from './pages/SinglePhone';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <nav className='nav'>
         <Link to="/">All Phones</Link>
       </nav>
